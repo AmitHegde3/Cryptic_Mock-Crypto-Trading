@@ -2,6 +2,10 @@
 
 An online mock crypto trading platform for all users.
 
+Access the website here:
+
+> https://amithegde3.github.io/WAD/
+
 ## Contributors
 
 Aditi Phaneesh @ https://github.com/Aditi-novelista
