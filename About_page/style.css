@@ -1,0 +1,236 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow: hidden;
+  background: #0e0216;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.navigation a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .btn-login {
+  width: 120px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.3s;
+}
+
+.navigation .btn-login:hover {
+  background: #fff;
+  color: #0e0216;
+}
+
+.wrapper{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding:0 10%;
+  overflow: hidden;
+}
+
+.wrapper::before{
+  position: absolute;
+  margin-top: 100px;
+  content: '';
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  left: -12%;
+  top: 50%;
+  background: linear-gradient(45deg, #00005C,#ffbb78);
+  animation: object1 6s linear infinite;
+  z-index: -2;
+}
+.wrapper::after{
+  position: absolute;
+  margin-left:100px;
+  content: '';
+  height: 100px;
+  width:100px;
+  border-radius: 50%;
+  left: 35%;
+  top: 12%;
+  background: linear-gradient(45deg, #0000a0,#ffa851);
+  animation: object2 2s linear infinite;
+  z-index: -2;
+}
+
+@keyframes object1 {
+  50%{
+    left: -13%;
+    top: 41%;
+  }
+}
+
+@keyframes object2 {
+  50%{
+    left: 35%;
+    top: 10%;
+  }
+}
+.cols{
+  width: 70%;
+}
+
+.cols0{
+  width: 70%;
+  margin-top: 200px;
+}
+.cols1{
+  margin-top: 300px;
+}
+.topline{
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #F0CAA3;
+  margin-top: 20px;
+}
+
+.topline::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 45px;
+  bottom:10px;
+  background-color:#C060A1 ;
+}
+
+h1{
+  display: block;
+  margin-top: 10px;
+  font-size: 3em;
+  font-weight: 900;
+  color:#F0CAA3 ;
+}
+
+.multiText{
+  color: #C060A1;
+  text-transform: capitalize;
+}
+
+
+p{
+  display: block;
+  width: 90%;
+  font-size: 1.2em;
+  color: #F0CAA3;
+  margin-top: 40px;
+}
+
+.btns{
+  width: 100%;
+  position: relative;
+  left: 40px;
+}
+
+button{
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #3d535f;
+  padding: 8px 14px;
+  margin:40px 20px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0,0,0,0.4);
+}
+
+button:hover{
+  background-color: #7f00ff;
+}
+
+.imgbox{
+  position:relative ;
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox img{
+  position: relative;
+  height: 100%;
+  width: calc(130% - 80px);
+  top: -100px;
+  right: 50px;
+  animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+  50%{
+    right: 30px;
+    top: -90px;
+  }
+}
+
+.imgbox #splash{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-35deg);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate{
+  50%{
+    top: 49%;
+    left: 51%;
+    width: 155%;
+  }
+}
