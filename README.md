@@ -4,7 +4,7 @@ An online mock crypto trading platform for all users.
 
 Access the website here:
 
-> https://amithegde3.github.io/WAD/
+> https://amithegde3.github.io/Cryptic_Mock-Crypto-Trading/
 
 ## Contributors
 
