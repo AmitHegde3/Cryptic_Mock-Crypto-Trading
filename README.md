@@ -1,6 +1,9 @@
+
 # Cryptic
 
 An online mock crypto trading platform for all users.
+
+![Screenshot from 2023-04-25 22-53-10](https://user-images.githubusercontent.com/118654485/234355202-83801d5b-2d1e-428c-9515-ebdce2a91b39.png)
 
 Access the website here:
 
